@@ -54,10 +54,44 @@ public class Loops {
         } while (i > 0);
     }
 
+    static boolean check(int i) {
+        return i > 0;
+    }
+
+    static int getVariableFromSomewhereOrOther() {
+        return 10;
+    }
+
+    static void doSomethingElse() {
+        System.out.println("Start loop!");
+    }
+
     static void forExamples() {
         //with all statements
         for (int i = 10; i > 0; i--) {
             System.out.println(i);
+        }
+
+
+        //we can write even in such way
+        for (int i = 10; i > 0; System.out.println(i--)) {
+            continue;
+        }
+
+        //and even like this
+        for (int i = 10; check(i); System.out.println(i--)) {
+            continue;
+        }
+
+        //!!! we can use any expression in every of these 3 places between ; inside "for"
+        //and even like this
+        for (int i = getVariableFromSomewhereOrOther(); check(i); System.out.println(i--)) {
+            continue;
+        }
+
+        int k=10;
+        for (doSomethingElse(); check(k); System.out.println(k--)) {
+            continue;
         }
 
 
