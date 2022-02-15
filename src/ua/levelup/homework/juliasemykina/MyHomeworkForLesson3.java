@@ -1,4 +1,4 @@
-package com.company;
+package ua.levelup;
 
 import java.util.Scanner;
 import java.util.Arrays;
