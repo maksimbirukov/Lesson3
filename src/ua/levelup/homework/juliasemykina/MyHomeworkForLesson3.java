@@ -1,4 +1,4 @@
-package ua.levelup;
+package ua.levelup.homework.juliasemykina;
 
 import java.util.Scanner;
 import java.util.Arrays;
